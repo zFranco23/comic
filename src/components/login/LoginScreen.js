@@ -8,6 +8,9 @@ const LoginScreen = ({history}) => {
 
     const handleLogin = () => {
         // history.push('/');
+
+        //leer la ultima pagina visitada 
+        const path = JSON.parse(localStorage.getItem('lastPath')) || "/";
         dispatch({
             type : types.login,
             payload:{
@@ -15,7 +18,7 @@ const LoginScreen = ({history}) => {
                 id:"zFranco23",
             }
         })
-        history.replace('/');//Reemplaza la historia
+        history.replace(path);//Reemplaza la historia
     }
 
     return (

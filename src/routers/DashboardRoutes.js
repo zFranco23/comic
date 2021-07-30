@@ -7,6 +7,8 @@ import DcScreen from '../components/dc/DcScreen';
 import Navbar from '../components/ui/Navbar';
 import SearchScreen from '../components/search/SearchScreen';
 const DashboardRoutes = () => {
+    //Cada vez que entro a una ruta privada , para recordarla
+    
     return (
         <>
             <Navbar />

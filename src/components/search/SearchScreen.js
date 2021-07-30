@@ -16,7 +16,6 @@ const SearchScreen = ( { history }) => {
     const initialForm = {
         searchText: q,
     };
-    console.log("ga")
     const [ formValues, handleInputChange] = useForm( initialForm );
     
     const { searchText }  = formValues;
