@@ -10,6 +10,10 @@ const DashboardRoutes = () => {
     return (
         <>
             <Navbar />
+            {/* Navbar no tiene acceso a los props que tienen las rutas , como history , etc
+                solo las rutas tienen este history , es decir el componente que se reenderiza
+                por ruta .
+            */}
             <div className="container mt-2">
                 <Switch>
                     <Route exact path="/marvel" component={MarvelScreen} />

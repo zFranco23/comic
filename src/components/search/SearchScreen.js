@@ -1,7 +1,6 @@
 import React, { useMemo } from 'react'
 import queryString from 'query-string';
 import { useLocation } from 'react-router-dom';
-import { heroes } from '../../data/heroes'
 import { useForm } from '../../hooks/useForm';
 import HeroCard from '../heroes/HeroCard';
 import { getHeroesByName } from '../../selectors/getHeroesByName';
@@ -70,7 +69,7 @@ const SearchScreen = ( { history }) => {
                             </div>
                     }
                     {
-                        q!=="" && heroesFiltered.length==0 &&
+                        q!=="" && heroesFiltered.length===0 &&
                         <div className="alert alert-danger">
                             There is not a hero with {q} ...
                         </div>
