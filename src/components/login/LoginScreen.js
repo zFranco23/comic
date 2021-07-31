@@ -10,7 +10,7 @@ const LoginScreen = ({history}) => {
         // history.push('/');
 
         //leer la ultima pagina visitada 
-        const path = JSON.parse(localStorage.getItem('lastPath')) || "/";
+        const path = localStorage.getItem('lastPath') || "/";
         dispatch({
             type : types.login,
             payload:{
